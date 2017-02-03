@@ -1,2 +1,2 @@
 # BusBot
-A system for tracking moving objects (like busses!) as they follow a predefined route, and providing predictions using machine learning
+A system designed to track the campus shuttle busses at the University of Minnesota - Twin Cities and provide very accurate predictions using machine learning. Pings the NextBus API for raw GPS information from a transceiver located on every bus, then parses and cleans the GPS data and snaps it onto a predefined route. Historical data is stored in a Postgres database hosted on AWS RDS. From there, uses the scikit-learn machine learning library to generate predictions based on past performance.  
